@@ -9,8 +9,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Products = () => {
 
-    const cardsContainerRef = useRef();
-
+    const cardsContainerRef = useRef(); //A ref is like a special object that helps you interact with the actual HTML elements or React components in your application.
+    
+    //any updates in useLayoutEffect will be applied before the user sees the content. Unmouting
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
@@ -19,8 +20,8 @@ const Products = () => {
             opacity: 1,
             scrollTrigger: {
                 trigger: cardsContainerRef.current,
-                markers: true,
-                start: "top 500px",
+                //markers: true,
+                start: "top 400px",
                 end: "bottom 700px"
             }
         })

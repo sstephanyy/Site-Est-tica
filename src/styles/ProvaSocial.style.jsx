@@ -35,6 +35,7 @@ export const ImageContainer = styled.div`
     align-items: center;
     margin-top: 3rem;
     gap: 5rem;
+    
 
 `;
 
