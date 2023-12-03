@@ -6,7 +6,7 @@ import { HomeContainer, HomeContent } from '../styles/Home.style';
 
 const Home = () => {
     return (
-      <HomeContainer>
+      <HomeContainer id="Home">
         <HomeContent className='container'>
           <div>
             <h3>

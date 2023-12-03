@@ -27,7 +27,7 @@ const Especialidades = () => {
     };
 
     return (
-        <EspecialidadeContainer >
+        <EspecialidadeContainer id="Especialidades">
             <OverlayContainer style={containerStyle}/>
                 <TitleContainer>
                     <h3>Especialidades</h3>

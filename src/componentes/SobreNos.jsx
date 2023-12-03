@@ -5,7 +5,7 @@ import groupicon from "../assets/group-icon.png";
 const SobreNos = () => {
 
     return (
-        <SobreNosContainer>
+        <SobreNosContainer id="Sobre Nós">
             <InsiderContainer className="container">
                 <div>
                    <h3>Conheça Nossa Clínica</h3>

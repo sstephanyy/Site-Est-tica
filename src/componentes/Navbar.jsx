@@ -10,7 +10,7 @@ export const NavBar = () => {
             id: 1,
             link: "Home",
         },
-        {
+        { 
             id: 2,
             link: "Especialidades",
         },
@@ -59,6 +59,7 @@ export const NavBar = () => {
                         <img src={logo} width={111} height={50} style={{ cursor: "pointer" }} />
                     </div>
                     <NavList>
+
                         {navlinks.map(({ id, link }) => (
                             <NavLink key={id}>
                                 <ScrollLink to={link} smooth duration={500}>

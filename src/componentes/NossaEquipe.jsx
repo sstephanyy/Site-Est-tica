@@ -67,7 +67,7 @@ const NossaEquipe = () => {
     }, []);
 
     return(
-        <NossaEquipeContainer >
+        <NossaEquipeContainer id="Nossa Equipe">
             <OverlayContainer style={containerStyle}/>
             <div className="container">
             <TitleContainer>

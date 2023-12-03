@@ -4,7 +4,7 @@ import { ContatoContainer, ContentContainer } from "../styles/Contato.style";
 
 export const Contato = () => {
     return(
-        <ContatoContainer>
+        <ContatoContainer id="Contato">
             <Parallax strength={350} bgImage={mybanner}>
                 <ContentContainer>
                    

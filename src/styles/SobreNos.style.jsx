@@ -3,7 +3,7 @@ import GlobalStyles from "./GlobalStyles";
 
 export const SobreNosContainer = styled.div`
     width: 100%;
-    height: 638px;
+    height: 688px;
     background-color:#faf7f7 !important;
     display: flex;
 `;
