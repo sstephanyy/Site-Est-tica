@@ -1,4 +1,3 @@
-import GlobalStyles from "./GlobalStyles";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
