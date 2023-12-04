@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const ContatoFormContainer = styled.div`
     width: 100%;
     height: 20rem;
+
+    @media (max-width: 768px) {
+        position: relative;
+        bottom: 130px;
+  }
     
 `;
 
@@ -10,7 +15,6 @@ export const InnerContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
     
 `;
@@ -68,6 +72,16 @@ export const AllContent = styled.div`
         
      }
 
+     @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+
+        .left-container{
+            padding-bottom: 23px;
+        }
+  }
+
 `;
 
 export const RightContainer = styled.div`
@@ -119,6 +133,16 @@ export const RightContainer = styled.div`
             transform: scale(1.1);
             background-color: var(--brown-100);
             }
+        }
+
+        @media (max-width: 768px) {
+            max-width: 95%;   
+
+           .contato{
+            display: block;
+            width: 100%; 
+
+           }
         }
     }
 

@@ -6,6 +6,10 @@ export const NossaEquipeContainer = styled.div`
     background-color: #f7f7f7;
     position: relative;
 
+    @media (max-width: 768px) {
+        height: 69rem;
+  }
+
 `;
 
 export const OverlayContainer = styled.div`
@@ -24,9 +28,14 @@ export const CardContainer = styled.div`
     padding: 20px;
     position: relative;
     z-index: 6;
-    height: 400px; /* Adjust the height as needed */
+    height: 400px; 
 
-`;
+    @media (max-width: 768px) {
+    /* Styles for screens smaller than 768 pixels */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    height: 300px; 
+  }
+`; 
 
 export const Card = styled.div`
     background-color: #f0f0f0;
@@ -85,4 +94,46 @@ export const TitleContainer = styled.div`
         font-family: 'Poppins', sans-serif;
         color: var(--brown-200);
     }
+
+    @media (max-width: 768px) {
+        h3{
+            font-size: 34px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 15px;
+        }
+  }
 `;
+export const ButtonContainer = styled.button`
+    position: relative;
+    z-index: 6;
+    max-width: 69rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    gap: 5px;
+    padding: 12px 19px;
+    border-radius: 35px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color:  var(--brown-100);
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #E6C8B8;
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+    transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+       margin-top: 480px;
+  }
+`; 

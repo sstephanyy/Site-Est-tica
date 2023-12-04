@@ -1,6 +1,5 @@
-import { NossaEquipeContainer, OverlayContainer, CardContainer, Card, TitleContainer, } from "../styles/NossaEquipe.style";
+import { NossaEquipeContainer, OverlayContainer, CardContainer, Card, TitleContainer, ButtonContainer} from "../styles/NossaEquipe.style";
 import banner from "../assets/banner-especialidades.png"
-import { ButtonContainer } from "../styles/Especialidade.style";
 import { FaWhatsapp } from 'react-icons/fa';
 
 import pessoa1 from "../assets/NossaEquipe/pessoa1.png";
@@ -66,7 +65,7 @@ const NossaEquipe = () => {
         };
     }, []);
 
-    return(
+    return( 
         <NossaEquipeContainer id="Nossa Equipe">
             <OverlayContainer style={containerStyle}/>
             <div className="container">
