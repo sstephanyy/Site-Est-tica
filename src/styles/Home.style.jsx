@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import GlobalStyles from "./GlobalStyles";
 
 export const HomeContainer = styled.div`
   height: ${(props) => (props.isMobile ? "800px" : "639px")};
