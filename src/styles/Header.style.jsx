@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import GlobalStyles from "./globalStyles.jsx";
 
 export const HeaderContainer = styled.header`
     width: 100%;

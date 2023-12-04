@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import GlobalStyles from "./GlobalStyles";
+import GlobalStyles from "./globalStyles.jsx";
 
 
 export const NossoEspacoContainer = styled.div`

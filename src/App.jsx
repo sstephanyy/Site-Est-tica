@@ -1,4 +1,4 @@
-import GlobalStyles from './styles/GlobalStyles.jsx'; 
+import GlobalStyles from './styles/globalStyles.jsx'; 
 import Header from './componentes/Header.jsx';
 import { NavBar } from './componentes/Navbar.jsx';
 import  Home from './componentes/Home.jsx';

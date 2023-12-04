@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import GlobalStyles from "./GlobalStyles";
+import GlobalStyles from "./globalStyles.jsx";
+
 
 export const ProductContainer  = styled.div`
     width: 100%;
