@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import GlobalStyles from "./GlobalStyles";
-
+ 
 export const SobreNosContainer = styled.div`
     width: 100%;
     height: 688px;
-    background-color:#faf7f7 !important;
+    background-color:rgb(250, 247, 247) !important;
     display: flex;
+
+    @media (max-width: 768px) {
+        height: 840px;        
+    }
 `;
 
 export const InsiderContainer = styled.div`
@@ -28,6 +32,20 @@ export const InsiderContainer = styled.div`
         }
     }
 
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 83px;
+
+        > img {
+            width: 300px;
+            margin-right: 70px;
+            margin-top: 27px;
+        }
+
+  }
+
     
 `;
 
@@ -39,6 +57,7 @@ export const SubTopics = styled.div`
     position: relative;
     padding-bottom: 10px; 
     margin-bottom: 10px;
+
 
     &::after{
     content: '';
@@ -55,6 +74,13 @@ export const SubTopics = styled.div`
         display: flex;
         margin-bottom: 15px;
     }
+
+    @media (max-width: 768px) {
+        display: flex;
+        align-items: center;
+        max-width: 90%;
+  }
+   
 
 `;
 

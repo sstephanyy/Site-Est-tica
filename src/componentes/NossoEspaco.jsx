@@ -43,6 +43,21 @@ const NossoEsapaco = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [carouselImages, setCarouselImages] = useState(images);
   const [direction, setDirection] = useState('left');
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
 
   const handleNext = () => {
@@ -80,7 +95,7 @@ const NossoEsapaco = () => {
 
     return (
         <NossoEspacoContainer>
-            <WrapperContainer className="container">
+            <WrapperContainer className= "container">
                 <TitleContainer>
                     <h3>Nosso Espaço</h3>
                     <p>Criamos um ambiente onde homens e mulheres podem experimentar tratamentos e serviços de qualidade</p>
@@ -98,7 +113,7 @@ const NossoEsapaco = () => {
                         </svg>          
                     </LeftArrows>
       {/* to get the first three images from the images array and renders them as initial images. */}
-            {carouselImages.slice(currentIndex, currentIndex + 4).map((image, index) => (
+            {carouselImages.slice(currentIndex, isMobile ? currentIndex + 1 : currentIndex + 4).map((image, index) => (
                 <AnimatePresence>
                     <motion.img 
                     key={index}

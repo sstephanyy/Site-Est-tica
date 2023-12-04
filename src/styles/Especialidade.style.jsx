@@ -6,6 +6,10 @@ export const EspecialidadeContainer = styled.div`
     background-color: #f7f7f7;
     position: relative;
 
+    @media (max-width: 768px) {
+        height: 180rem;
+    }
+
 `;
 
 export const OverlayContainer = styled.div`
@@ -51,6 +55,8 @@ export const TopicsTexts = styled.div`
     gap: 10px;
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next row */
+
     justify-content: space-between;
    
     > div{
@@ -70,6 +76,11 @@ export const TopicsTexts = styled.div`
             color: var(--brown-100);    
         }
     }
+
+    @media (max-width: 768px) {
+        margin-bottom: 33px;
+    }
+
    
 `;
 
@@ -83,6 +94,10 @@ export const CardGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
 `;
 
 export const Card = styled.div`
@@ -147,4 +162,4 @@ export const ButtonContainer = styled.button`
     &:hover {
     transform: scale(1.1);
     }
-`;
+`; 

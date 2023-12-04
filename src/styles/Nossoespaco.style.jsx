@@ -5,6 +5,14 @@ export const NossoEspacoContainer = styled.div`
     width: 100%;
     height: 638px;
     background-color:#faf7f7 !important;
+
+    @media (max-width: 768px) {
+        padding-top: 320px;
+        height: 980px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+  }
 `;
 
 export const WrapperContainer = styled.div`
@@ -14,6 +22,8 @@ export const WrapperContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+  
 `;
 
 export const TitleContainer = styled.div`
@@ -35,6 +45,13 @@ export const TitleContainer = styled.div`
         font-family: 'Poppins', sans-serif;
         color: var(--brown-200);
     }
+
+    @media (max-width: 768px) {
+        text-align: center;
+
+  }
+
+    
 `;
 
 export const ImageContainer = styled.div`

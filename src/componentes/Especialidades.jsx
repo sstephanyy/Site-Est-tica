@@ -35,7 +35,7 @@ const Especialidades = () => {
                 </TitleContainer>
                 
                 <TopicsTexts>
-                    <div>
+                    <div className="selected">
                         <p>
                             Harmonização Facial
                         </p>

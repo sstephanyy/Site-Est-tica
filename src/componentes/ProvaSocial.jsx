@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { Arrows, ProvaSocialContainer, TextContainer, DotsContainer } from "../styles/ProvaSocial.style";
@@ -43,12 +43,24 @@ const slideVariants = {
   },
 };
 
-
-
 export const ProvaSocial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [carouselImages, setCarouselImages] = useState(images);
   const [direction, setDirection] = useState('left');
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
 
   const handleNext = () => {
@@ -90,8 +102,9 @@ export const ProvaSocial = () => {
             <path d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z" />
           </svg>          
         </Arrows>
-      {/* to get the first three images from the images array and renders them as initial images. */}
-      {carouselImages.slice(currentIndex, currentIndex + 3).map((image, index) => (
+      {carouselImages
+          .slice(currentIndex, isMobile ? currentIndex + 1 : currentIndex + 3)
+          .map((image, index) => (
         <AnimatePresence>
               <motion.img 
               key={index}

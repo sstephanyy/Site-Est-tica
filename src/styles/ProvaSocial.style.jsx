@@ -5,7 +5,7 @@ import GlobalStyles from "./GlobalStyles";
 export const ProvaSocialContainer = styled.div`
     width: 100%;
     height: 619px;
-    margin-top: 14rem;
+    margin-top: 14rem; 
 
     @media (max-width: 768px) {
         margin-top: 47rem;
@@ -30,6 +30,12 @@ export const TextContainer = styled.div`
         font-family: 'Poppins', sans-serif;
         color: var(--brown-200); 
 
+    }
+
+    @media (max-width: 768px) {
+        p{
+            text-align: center;
+        }
     }
 `;
 
@@ -59,14 +65,20 @@ export const DotsContainer = styled.div`
     border-radius: 50%;
     cursor: pointer;
 
-    &:hover{
-        background-color: #694A38A6;
+        &:hover{
+            background-color: #694A38A6;
 
+        }
     }
-}
-.active {
-    background-color: #694A38A6;
-}
+    .active {
+        background-color: #694A38A6;
+    }
+
+    @media (max-width: 768px) {
+        justify-content: center;  // Center the dots horizontally on small screens
+        margin-left: auto;  // Remove any left margin
+        gap: 10px; 
+  }
 
 `;
 
