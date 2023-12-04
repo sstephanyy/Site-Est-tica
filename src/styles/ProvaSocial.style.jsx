@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import GlobalStyles from "./GlobalStyles";
 
 
 export const ProvaSocialContainer = styled.div`
