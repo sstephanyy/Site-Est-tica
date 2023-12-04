@@ -1,4 +1,3 @@
-import GlobalStyles from './styles/GlobalStyles.jsx'; // Correct casing
 import Header from './componentes/Header.jsx';
 import { NavBar } from './componentes/Navbar.jsx';
 import  Home from './componentes/Home.jsx';
