@@ -29,7 +29,7 @@ const Products = () => {
             gsap.killTweensOf(".card"); //unmounted pra n pesar a pagina
         }
     }, []);
-
+ 
     return(
         <ProductContainer>
             <CardsContainer ref={cardsContainerRef}>

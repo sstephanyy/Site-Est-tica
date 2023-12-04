@@ -16,6 +16,10 @@ export const HeaderContainer = styled.header`
         align-items: center;
         justify-content: space-between;
     }
+
+    @media (max-width: 700px) { 
+        padding: 0px 10px;
+    }
 `;
 
 export const AddressContainer = styled.div`
@@ -25,6 +29,11 @@ export const AddressContainer = styled.div`
   font-size: var(--font-text-secondary);
   font-weight: 500;
   color: #694A38;
+
+  @media (max-width: 700px) { 
+      font-size: 13px;
+    }
+
 `;
 
 export const IconsContainer = styled.ul`

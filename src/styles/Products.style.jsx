@@ -8,10 +8,15 @@ export const ProductContainer  = styled.div`
     height: 6.2rem;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        padding-top: 173px;
+        height: 9rem;
+    }
 `; 
 
 export const CardsContainer = styled.div`
-     display: grid;
+      display: grid;
       grid-template-columns: repeat(4, 280px );
       grid-template-rows: 210px; 
       gap: 20px;
@@ -48,6 +53,12 @@ export const CardsContainer = styled.div`
             color: var(--gray);
             text-align: center;
         }
+    }
+
+    
+    @media (max-width: 768px) {
+        grid-template-rows: 210px; 
+        grid-template-columns: 280px; /* Display a single column on small screens */
     }
 
 `;

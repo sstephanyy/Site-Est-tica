@@ -2,19 +2,23 @@ import styled from "styled-components";
 import GlobalStyles from "./GlobalStyles";
 
 export const HomeContainer = styled.div`
-  width: 100%;
-  height: 639px;
+  height: ${(props) => (props.isMobile ? "800px" : "639px")};
+
   background-color: var(--beige-100);
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) { 
+       padding: 0px 20px;
+
+    }
 `;
 
 export const HomeContent = styled.div`
   display: flex;
   position: relative;
   align-items: center;
-  position: relative;
   
   > div {
     position: relative;
@@ -22,7 +26,7 @@ export const HomeContent = styled.div`
     max-width: 600px;
   }
 
-
+ 
   > img {
     /* margin-left: -290px;
     margin-bottom: 15px; */
@@ -72,6 +76,46 @@ export const HomeContent = styled.div`
     &:hover {
     transform: scale(1.1);
     }
+  }
+
+  //is used to target smaller screens or viewports.
+  @media (max-width: 768px) { 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+    > div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; /* Center the text within the div */
+    }
+
+    > div > h3 {
+      max-width: 75%;
+      font-size: 34px;
+      margin-top: 100px;
+    }
+
+    > div > p {
+      max-width: 70%;
+      font-size: 16px;
+      line-height: 1; /* or line-height: normal; */
+
+    }
+
+    > img {
+      position: static;
+      max-width: 1300px; 
+      margin-right: 340px;
+    }
+
+    > div > div > button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
   }
 
 `;

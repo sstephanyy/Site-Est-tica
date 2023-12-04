@@ -1,12 +1,27 @@
-// Home.jsx
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import { FaWhatsapp } from 'react-icons/fa';
 import pessoa from '../assets/banner-pessoa.png';
 import { HomeContainer, HomeContent } from '../styles/Home.style';
 
 const Home = () => {
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768); 
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize); //When the window is resized, the handleResize function is called, updating the isMobile state based on the new window width.
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
     return (
-      <HomeContainer id="Home">
+      <HomeContainer id="Home" isMobile={isMobile}>
         <HomeContent className='container'>
           <div>
             <h3>
@@ -24,6 +39,11 @@ const Home = () => {
           </div>
           <img src={pessoa} alt="uma mulher" />
         </HomeContent>
+        
+        {isMobile ? null : (
+          <div style={{ paddingBottom: "110px" }}>
+          </div>
+        )}
       </HomeContainer>
       
     );

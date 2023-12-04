@@ -6,6 +6,10 @@ export const ProvaSocialContainer = styled.div`
     width: 100%;
     height: 619px;
     margin-top: 14rem;
+
+    @media (max-width: 768px) {
+        margin-top: 47rem;
+    }
 `;
 
 export const TextContainer = styled.div`
