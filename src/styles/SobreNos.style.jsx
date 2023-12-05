@@ -2,7 +2,7 @@ import styled from "styled-components";
 import GlobalStyles from "./globalStyles.jsx";
  
 export const SobreNosContainer = styled.div`
-    height: 688px;
+    height: 688px; 
     background-color:rgb(250, 247, 247) !important;
     display: flex;
 
@@ -35,12 +35,16 @@ export const InsiderContainer = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: 83px;
+        padding: 0px 29px;
+
+        > div > h3 {
+            text-align: center;
+
+        }
 
         > img {
             width: 300px;
-            margin-right: 70px;
-            margin-top: 27px;
+            margin-top: 12px;
         }
 
   }
@@ -77,7 +81,6 @@ export const SubTopics = styled.div`
     @media (max-width: 768px) {
         display: flex;
         align-items: center;
-        max-width: 90%;
   }
    
 

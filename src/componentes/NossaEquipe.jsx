@@ -115,12 +115,12 @@ const NossaEquipe = () => {
                         <a href="">Saiba Mais</a>
                         </p>
                     </Card>
+                      <ButtonContainer>
+                        <FaWhatsapp size={18} />
+                        Agendar Consulta
+                    </ButtonContainer>  
+                
                 </CardContainer>
-
-                <ButtonContainer>
-                    <FaWhatsapp size={18} />
-                    Agendar Consulta
-              </ButtonContainer>
 
             </div>
            

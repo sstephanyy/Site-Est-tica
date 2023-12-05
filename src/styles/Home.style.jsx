@@ -11,9 +11,6 @@ export const HomeContainer = styled.div`
   padding: 0px 20px;
 
 
-  @media (max-width: 768px) { 
-
-    }
 `;
 
 export const HomeContent = styled.div`
@@ -79,13 +76,16 @@ export const HomeContent = styled.div`
     }
   }
 
-  //is used to target smaller screens or viewports.
   @media (max-width: 768px) { 
     display: flex;
     flex-direction: column; 
     align-items: center;
+    padding: 30px 0px;
+    margin-top: 130px;
+
 
     > div{
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -93,22 +93,21 @@ export const HomeContent = styled.div`
     }
 
     > div > h3 {
-      max-width: 60%;
-      font-size: 28px;
-      margin-top: 100px;
+      max-width: 90%;
+      font-size: 40px;
     }
 
     > div > p {
-      max-width: 60%;
+      max-width: 84%;
       font-size: 16px;
       line-height: 1; /* or line-height: normal; */
+      margin-bottom: 22px;
 
     }
 
     > img {
       position: static;
-      max-width: 1300px; 
-      margin-right: 340px;
+      height: 356px;
     }
 
     > div > div > button{

@@ -6,7 +6,7 @@ export const NossaEquipeContainer = styled.div`
     position: relative;
 
     @media (max-width: 768px) {
-        height: 69rem;
+        height: 106rem;
   }
 
 `;
@@ -29,10 +29,12 @@ export const CardContainer = styled.div`
     z-index: 6;
     height: 400px; 
 
+
     @media (max-width: 768px) {
-    /* Styles for screens smaller than 768 pixels */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    height: 300px; 
+        height: 300px;
+        grid-template-columns: 240px;
+        justify-content: center;
+        align-items: center;
   }
 `; 
 
@@ -70,6 +72,7 @@ export const Card = styled.div`
             display: block;
         }
     }
+
 `;
 export const TitleContainer = styled.div`
     display: flex;
@@ -102,15 +105,14 @@ export const TitleContainer = styled.div`
         p {
             text-align: center;
             font-size: 15px;
+            max-width: 85%;
         }
   }
 `;
 export const ButtonContainer = styled.button`
     position: relative;
-    z-index: 6;
-    max-width: 69rem;
-    margin-right: auto;
-    margin-left: auto;
+    z-index: 6;   
+    margin : 0 auto;
     margin-top: 38px;
     display: flex;
     justify-content: center;
@@ -132,7 +134,5 @@ export const ButtonContainer = styled.button`
     transform: scale(1.1);
     }
 
-    @media (max-width: 768px) {
-       margin-top: 480px;
-  }
+
 `; 

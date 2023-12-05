@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import logo from '../assets/anastasialogo.png';
-import { IconsMenu, MobileMenu, Nav, NavBarLinkMobile, NavLink, NavList, NavbarContainer } from "../styles/Navbar.style";
+import { IconsMenu, MobileMenu, Nav, NavBarLinkMobile, NavLink, NavList, NavbarContainer, NavbarHeader } from "../styles/Navbar.style";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export const NavBar = () => {
@@ -59,7 +59,7 @@ export const NavBar = () => {
             <div className="container">
                 <Nav className="navbar">
                     <div>
-                        <img src={logo} width={111} height={50} style={{ cursor: "pointer" }} />
+                    {nav ? null : <img src={logo} alt="Logo" width={111} height={50} />}
                     </div>
                     <NavList>
                         {navlinks.map(({ id, link }) => (
@@ -73,11 +73,16 @@ export const NavBar = () => {
                 </Nav>
             </div>
 
-            <IconsMenu
-                onClick={() => setNav(!nav)}>
-                {nav ? <FaTimes size={30} fill="#694A38A6" /> : <FaBars size={30} fill="#694A38A6"/>}
-            </IconsMenu>
-
+            <NavbarHeader>
+                <div>
+                {/* the logo will be displayed when nav is true and hidden when nav is false */}
+                    {nav ? <img src={logo} alt="Logo" width={111} height={50} /> : null}
+                </div>
+                <IconsMenu onClick={() => setNav(!nav)}>
+                    {nav ? <FaTimes size={45} fill="#694A38A6" /> : <FaBars className="bars-icon" size={30} fill="#694A38A6" />}
+                </IconsMenu>
+            </NavbarHeader>
+           
       {nav && (
         <MobileMenu>
           {navlinks.map(({ id, link }) => (

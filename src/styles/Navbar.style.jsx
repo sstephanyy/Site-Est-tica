@@ -14,7 +14,8 @@ export const NavbarContainer = styled.nav`
 
     @media (min-width: 700px) { 
         height: 69px;
-    }
+
+    } 
 `;
 
 export const Nav = styled.div`
@@ -22,11 +23,20 @@ export const Nav = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 768px) { 
+        padding: 0px 20px;
+        /* position: absolute;
+        left: 30px;
+        top: 50px; */
+    }
+
+
 `;
 
 export const NavList = styled.ul`
     display: flex;
     gap: 26px;
+
 `;
 
 export const NavLink = styled.li`
@@ -36,6 +46,7 @@ export const NavLink = styled.li`
     font-weight: 400;
     position: relative;
     cursor: pointer;
+    
 
 
     &::after {
@@ -55,13 +66,22 @@ export const NavLink = styled.li`
 
     @media (max-width: 700px) { 
         display: none; 
-
     }
 `;
 
 
 export const IconsMenu = styled.div`
     padding: 0px 20px;
+
+    .bars-icon{
+        position: relative;
+        top: -26px;
+        right: 0px;
+    }
+    /* position: absolute;
+    right: 30px;
+    top: 50px; */
+
 
     @media (min-width: 700px) {
         display: none;
@@ -73,6 +93,11 @@ export const MobileMenu = styled.ul`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 159px;
+    right: 0;
+    left: 0;
 
     @media (min-width: 700px) {
         display: none;
@@ -80,7 +105,24 @@ export const MobileMenu = styled.ul`
 `;
 
 export const NavBarLinkMobile = styled.li`
-    font-size: x-large;
     margin: 10px;
+    width: 90%;
+    padding: 0px 10px;
+    font-family: var(--font-fraunces);
+    color: white;
+    background-color: var(--brown-100);
+    font-size: 40px;
+    font-weight: 400;
+
+`;
+
+export const NavbarHeader = styled.div`
+    position: absolute;
+    top: 50px; 
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 20px;
+
 
 `;

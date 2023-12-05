@@ -6,7 +6,7 @@ export const EspecialidadeContainer = styled.div`
     position: relative;
 
     @media (max-width: 768px) {
-        height: 180rem;
+        height: 190rem;
     }
 
 `;
