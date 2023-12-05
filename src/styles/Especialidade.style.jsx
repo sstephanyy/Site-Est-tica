@@ -108,7 +108,7 @@ export const Card = styled.div`
   flex-direction: column;
 
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-
+ 
     > img {
         cursor: pointer;
         width: 140px;
