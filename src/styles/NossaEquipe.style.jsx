@@ -4,6 +4,10 @@ export const NossaEquipeContainer = styled.div`
     height: 43rem;
     background-color: #f7f7f7;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
     @media (max-width: 768px) {
         height: 106rem;
@@ -113,7 +117,7 @@ export const ButtonContainer = styled.button`
     position: relative;
     z-index: 6;   
     margin : 0 auto;
-    margin-top: 38px;
+    margin-bottom: 58px;
     display: flex;
     justify-content: center;
     align-items: center;
