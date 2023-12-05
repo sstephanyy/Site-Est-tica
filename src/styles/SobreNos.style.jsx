@@ -2,7 +2,6 @@ import styled from "styled-components";
 import GlobalStyles from "./globalStyles.jsx";
  
 export const SobreNosContainer = styled.div`
-    width: 100%;
     height: 688px;
     background-color:rgb(250, 247, 247) !important;
     display: flex;

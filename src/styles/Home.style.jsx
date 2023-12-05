@@ -8,9 +8,10 @@ export const HomeContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 20px;
+
 
   @media (max-width: 768px) { 
-       padding: 0px 20px;
 
     }
 `;
@@ -88,17 +89,17 @@ export const HomeContent = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
-      text-align: center; /* Center the text within the div */
+      text-align: center; 
     }
 
     > div > h3 {
-      max-width: 75%;
-      font-size: 34px;
+      max-width: 60%;
+      font-size: 28px;
       margin-top: 100px;
     }
 
     > div > p {
-      max-width: 70%;
+      max-width: 60%;
       font-size: 16px;
       line-height: 1; /* or line-height: normal; */
 

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const EspecialidadeContainer = styled.div`
-    width: 100%;
     height: 82rem;
     background-color: #f7f7f7;
     position: relative;

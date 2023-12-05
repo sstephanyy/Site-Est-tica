@@ -3,7 +3,6 @@ import GlobalStyles from "./globalStyles.jsx";
 
 
 export const ProvaSocialContainer = styled.div`
-    width: 100%;
     height: 619px;
     margin-top: 14rem; 
 

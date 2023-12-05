@@ -2,7 +2,6 @@ import styled from "styled-components";
 import GlobalStyles from "./globalStyles.jsx";
 
 export const HeaderContainer = styled.header`
-    width: 100%;
     height: 2.4rem;
     background-color: var(--beige-300);
     display: flex;

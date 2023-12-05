@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const NossaEquipeContainer = styled.div`
-    width: 100%;
     height: 43rem;
     background-color: #f7f7f7;
     position: relative;

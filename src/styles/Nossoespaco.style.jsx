@@ -3,7 +3,6 @@ import GlobalStyles from "./globalStyles.jsx";
 
 
 export const NossoEspacoContainer = styled.div`
-    width: 100%;
     height: 638px;
     background-color:#faf7f7 !important;
 

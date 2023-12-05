@@ -3,15 +3,14 @@ import GlobalStyles from "./globalStyles.jsx";
 
 
 export const ProductContainer  = styled.div`
-    width: 100%;
-    position: absolute;
-    top: 600px;
     height: 6.2rem;
     display: flex;
     justify-content: center;
+    margin-top: -75px;
+
 
     @media (max-width: 768px) {
-        padding-top: 173px;
+        margin-top: -75px;
         height: 9rem;
     }
 `; 
